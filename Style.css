@@ -28,6 +28,12 @@ html,body{
     background-size:cover;
 
 }
+.circle {
+  width: 50px; /* Adjust the width and height to change the size of the circle */
+  height: 50px; /* Ensure width and height are equal for a perfect circle */
+  background-color: #007bff; /* Change the background color of the circle */
+  border-radius: 50%; /* Set border-radius to 50% for a circular shape */
+}
 
 
 .ptext1{
@@ -132,6 +138,25 @@ h3{
   .contact p {
     margin-bottom: 20px;
 }
+
+.Icons{
+  display: inline-block; /* Ensures the container only takes up the space it needs */
+  position: relative; /* Allows absolute positioning of the text */
+}
+.icon-name {
+  position: absolute; /* Position the text relative to its container */
+  bottom: -20px; /* Adjust as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  /* Background color of the text */
+  color: white(0, 0, 0, 0.742); /* Text color */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.Icon:hover .icon-name {opacity: 1;}
 
 footer {
     text-align: center;
