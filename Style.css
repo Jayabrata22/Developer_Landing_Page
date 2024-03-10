@@ -81,11 +81,10 @@ html,body{
 }
 
 .skillpart{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    max-width: 1100px;
-    margin: 50px auto;
+  display: flex; /* Change from grid to flex */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 20px; /* Adjust spacing between cards */
+  padding: 20px; /* Add padding for better visualization */
 }
 
 h3{
@@ -100,11 +99,10 @@ h3{
 }
 
 .skillcard{
-    max-width: 320px;
-    height: 400px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.3);
-    transition: 0.05ms ease-in-out;
+  flex: 0 0 320px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.3);
 }
 
 .skillcard:hover{
@@ -113,7 +111,24 @@ h3{
     transition: 0.03ms ease-in-out;
 }
 .card-container{
-    padding:20px;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease;/
+}
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .card-container h3 {
