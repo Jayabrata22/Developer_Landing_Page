@@ -21,6 +21,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     prevButton.addEventListener('click', () => scrollCards('prev'));
     nextButton.addEventListener('click', () => scrollCards('next'));
+    prevButton.addEventListener('click', function() {
+        cardsContainer.scrollBy({
+            left: -300, // Adjust this value based on the width of your cards
+            behavior: 'smooth'
+        });
+    });
+
+    nextButton.addEventListener('click', function() {
+        cardsContainer.scrollBy({
+            left: 300, // Adjust this value based on the width of your cards
+            behavior: 'smooth'
+        });
+    });
 
     updateButtons();
 });
