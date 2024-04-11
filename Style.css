@@ -68,6 +68,7 @@ html, body {
     font-family: "Roboto", sans-serif;
 }
 
+
 .textstart {
     font-size: 40px;
     padding: 20px;
@@ -84,6 +85,17 @@ html, body {
     overflow: hidden;
     display: flex; /* Ensure buttons and cards are aligned horizontally */
     align-items: center; /* Vertically center buttons and cards */
+    margin: 20px;
+    justify-content: center;    
+}
+
+.project-heading {
+    text-align: center; /* Center the text */
+}
+
+
+.button {
+    margin: 0 10px; /* Add space between button and cards */
 }
 
 .skillpart {
@@ -91,14 +103,18 @@ html, body {
     gap: 20px; /* Adjust spacing between cards */
     padding: 20px; /* Add padding for better visualization */
     position: relative;
-    overflow: hidden;
+    overflow-x: auto; /* Change to 'auto' for horizontal scrolling */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .grid-item {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 20px; */
+    flex: 0 0 auto; /* Change flex-basis to 'auto' */
+    width: 320px; /* Set fixed width for grid items */
 }
 
 .skillcard {
