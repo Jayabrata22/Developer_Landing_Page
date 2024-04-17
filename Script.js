@@ -14,3 +14,4 @@ function handleClick(direction) {
         list.scrollTo({ left: scrollDistance, behavior: "smooth" });
     }
 }
+//Javscrpit
